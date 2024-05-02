@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+
+
+body {background: #fff3b5;
+margin: 0 auto;}
+
+.PROFILE {text-align: center;
+background: #fff3b5;
+margin-top: 40px;}
+.PROFILE img {width: 90%;}

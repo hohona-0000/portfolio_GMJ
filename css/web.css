@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+
+/*전체*/
+* {padding: 0;
+margin: 0;
+font-family: "NanumSquareR";
+box-sizing: border-box;}
+body {background: #ffffff;
+color: #333333;
+width: 100%;
+height: 100%;}
+li {list-style: none;}
+a {text-decoration: none;
+color: inherit;
+display: block;}
+table {border-collapse: collapse;}
+button {cursor: pointer;}
+img {max-width: 100%;
+vertical-align: top;}
+
+
+/*레이아웃*/
+header {
+width: 100%;
+height: 90px;}
+#wrap {margin: 0 auto;
+width: 1500px;
+height: 767px;}
+#txt {width: 100%;
+height: 440px;}
+#site {width: 1500px;
+height: 340px;
+border-top: 2px dotted #64a9dc;}
+footer {width: 100%;
+height: 90px;
+background: #64a9dc;}
+
+
+/*헤더*/
+header h1 {color: #64a9dc;
+font-size: 50px;
+text-align: center;
+line-height: 90px;}
+
+
+/*사이트*/
+#txt {display: flex;
+justify-content: space-around;}
+.naver {width: 750px;
+height: 385px;
+margin-top: 20px;
+margin-bottom: 30px;
+border-radius: 10px;
+overflow: hidden;
+border: 2px solid #64a9dc;
+position: relative;
+background: url(../images/naver.jpg) no-repeat;
+filter: grayscale(1);}
+.naver:hover {background: url(../images/naverre.jpg) no-repeat;
+filter: grayscale(0);}
+
+
+.re {margin-top: 90px;}
+.re h3 {font-size: 28px;
+color: #03cd5c;}
+.re h3 span {color: #333333;
+font-size: 25px;}
+.re p {margin-top: 20px;}
+.re span {font-weight: bold;}
+
+#site {padding: 30px 0;}
+.cre {margin-left: 40px;
+font-size: 15px;}
+.cre span {font-size: 18px;
+font-weight: bold;}
+.hona li {
+width: 350px;
+height: 200px;
+margin-top: 10px;
+border-radius: 10px;
+margin-bottom: 10PX;
+overflow: hidden;
+border: 2px solid #64a9dc;}
+.hona ul {display: flex;
+margin-top: 20px;
+justify-content: space-around;}
+.hona li img:first-child{filter: grayscale(1);}
+
+.ss li:hover img:first-child{filter: grayscale(0);}
+
+
+
+/*푸터*/
+.copy>p {text-align: center;
+    font-size: 13px;
+    color: #ffffff;}
+    .copy {padding: 28px;}
+
+
