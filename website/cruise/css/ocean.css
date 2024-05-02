@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+/*짙은 파랑 : #13365e
+중간 파랑 : #116788
+밝은 파랑 : #45b3d6*/
+
+
+/*전체*/
+* {padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: "맑은 고딕";}
+body {width: 100%;
+height: 100%;
+background: #ffffff;
+color: #333333;}
+html {width: 100%;}
+li {list-style: none;}
+a {text-decoration: none;
+color: inherit;
+display: block;}
+button {cursor: pointer;}
+table {border-collapse: collapse;}
+img {max-width: 100%;
+vertical-align: middle;}
+
+
+/*레이아웃*/
+#top {width: 100%;
+height: 800px;
+display: flex;}
+footer {width: 100%;
+height: 120px;
+display: flex;}
+header {width: 200px;
+height: 100%;}
+#wrap {width: calc(100% - 200px);
+height: 100%;}
+#imgslide {width: 100%;
+height: 400px;}
+#contents {width: 100%;
+height: 400px;}
+
+
+/*헤더*/
+.logo {width: 200px;
+height: 150px;}
+.logo img {margin-top: 40px;}
+
+nav {width: 200px;
+height: 650px;}
+.navi {text-align: center;
+padding: 20px;}
+.navi>li a {padding: 15px;}
+.navi>li {width: 160px;
+background: #ffffff;
+border: 1px solid #45b3d6;
+border-bottom: none;
+position: relative;}
+.navi>li:hover, .navi>li a:focus {background: #45b3d6;
+color: #ffffff;
+font-weight: bold;}
+.navi>li:last-child{border-bottom:1px solid #45b3d6;}
+.submenu {background: #45b4d6d0;
+position: absolute;
+top: 0;
+left: 160px;
+width: 10000%;
+color: #ffffff;
+z-index: 33;
+margin-left: -1px;
+display: none;}
+.submenu>li {float: left;
+width: 160px;}
+.submenu>li a {padding: 15.5px}
+.submenu>li:hover, .submenu>li a:focus {background: #13365e;}
+
+
+/*이미지슬라이드*/
+#imgslide ul {width: 100%;
+height: 400px;
+position: relative;}
+#imgslide li {width: 100%;
+height: 400px;
+position: relative;
+position: absolute;}
+.s1 {background: url(../images/img1.jpg) no-repeat center/cover;}
+.s2 {background: url(../images/img2.jpg) no-repeat center/cover;}
+.s3 {background: url(../images/img3.jpg) no-repeat center/cover;}
+.welcome {position: absolute;
+top: 160px;
+left : 33%;
+width: 600px;
+height: 90px;
+background: #13365edc;
+color: #ffffff;
+text-align: center;
+border-radius: 20px;}
+.welcome h3 {font-size: 28px;
+text-shadow: 2px 2px #45b3d6;}
+.welcome p {margin-top: 18px;}
+
+
+/*콘텐츠*/
+.cont1 {width: 100%;
+height: 150px;
+padding: 10px;}
+.cont1 ul {display: flex;
+justify-content: space-around;
+text-align: center;}
+.go {background: #116788;
+border-radius: 20px;
+height: 130px;
+color: #ffffff;
+font-size: 15px;
+font-weight: bold;}
+.go img {margin-bottom: 5px;
+margin-top: 10px;}
+.go li:hover, .go a:focus {opacity: 0.5;}
+
+.cont2 {width: 100%;
+height: 250px;
+padding: 10px;
+display: flex;
+justify-content: space-around;}
+.tabmenu {width: 100px;
+height: 30px;
+text-align: center;
+background: #116788;
+color: #ffffff;
+margin-left: 30px;
+line-height: 30px;
+font-weight: bold;
+border-radius: 10px 10px 0 0;}
+.tabcon {background: #ffffff;
+width: 800px;
+height: 195px;
+border-radius: 10px;
+font-size: 15px;
+border: 5px solid #116788;
+overflow: hidden;}
+.notice table {width: 100%;
+height: 100%;}
+.notice table tr {border-bottom: 1px dashed #116788;}
+.notice table tr:last-child{border-bottom: none;}
+.notice table th {text-align: left;
+padding: 10px;}
+.notice table tr:hover, .notice table a:focus {background: #45b3d6;
+color: #ffffff;}
+
+.gallery ul {display: flex;
+text-align: center;
+justify-content: space-around;}
+.gallery img {height: 130px;
+margin-top: 15px;
+border-radius: 130px;
+margin-bottom: 5px;}
+.gallery span {color: #13365e;}
+.gallery li:hover, .gallery a:focus {font-weight: bold;
+opacity: 0.5;}
+
+
+/*팝업*/
+.modal {position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #45b4d63f;
+display: none;}
+.body img {border:5px solid #13365e;
+border-radius: 20px;}
+.body {margin-left: 40%;
+margin-top: 100px;}
+.button {margin-left: 340px;}
+.button button {padding: 10px 15px;
+border: none;
+color: #ffffff;
+font-weight: bold;
+background: #13365e;
+border-radius: 0 0 10px 10px;
+margin-top: -5px;}
+
+
+
+/*푸터*/
+.foot1 {width: 200px;
+height: 120px;}
+.foot2 {width: calc(100% - 450px);
+height: 120px;
+color: #13365e;}
+.menu {width: 100%;
+height: 60px;}
+.menu ul {display: flex;
+font-size: 13px;
+margin-left: 33px;}
+.menu li {
+padding: 3px 20px;
+margin-top: 30px;
+border-right: 1px solid #13365e;}
+.menu li:last-child{border-right: none;}
+.menu li:hover, .menu li a:focus {font-weight: bold;}
+
+.copy {width: 100%;
+height: 60px;
+font-size: 13px;
+line-height: 60px;
+margin-left: 50px;}
+
+.foot3 {width: 250px;
+height: 120px;}
+.foot3 form {margin-top: 45px;
+margin-left: 70px;}
+
+

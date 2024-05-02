@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+
+/*공작색 : 0098b0
+초록 : 49aa72
+빨강 : d12200*/
+
+
+/*전체*/
+* {padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: "맑은 고딕";}
+body {width: 100%;
+height: 100%;
+background: #ffffff;
+color: #333333;}
+html {width: 100%;}
+li {list-style: none;}
+a {display: block;
+color: inherit;
+text-decoration: none;}
+table {border-collapse: collapse;}
+button {cursor: pointer;}
+img {max-width: 100%;
+vertical-align: middle;}
+
+
+
+/*레이아웃*/
+#container {width: 100%;
+height: 650px;
+display: flex;}
+footer {width: 100%;
+height: 100px;
+display: flex;
+background: #b80c0c;}
+header {width: 200px;
+height: 650px;
+background: #b80c0c}
+#wrap {width: calc(100% - 200px);
+height: 650px;}
+#top {display: flex;}
+#imgslide {width: calc(100% - 230px);
+height: 400px;
+position: relative;
+overflow: hidden;}
+#banner {width: 230px;
+height: 400px;
+padding: 10px;
+background: #b80c0c;}
+#contents {width: 100%;
+height: 250px;
+display: flex;
+justify-content: space-around;}
+
+
+
+/*헤더*/
+.logo {width: 200px;
+height: 150px;}
+.logo img {margin-top: -15px;}
+
+nav {width: 200px;
+height: 500px;}
+.navi {padding: 30px 20px;}
+.navi a {padding: 10px 15px;}
+.navi>li {width: 160px;
+background: #ffffff;}
+.navi>li:hover, .navi>li a:focus {background: #0098b0;
+color: #ffffff;
+font-weight: bold;}
+.submenu>li {width: 160px;
+background: #ffffff;
+color: #333333;}
+.submenu>li:hover, .submenu>li a:focus {background: #0098b0;
+color: #ffffff;}
+.submenu {display: none;}
+
+
+
+/*이미지슬라이드*/
+#imgslide ul {width: 300%;
+height: 400px;
+display: flex;
+position: absolute;}
+#imgslide li {width: 100%;
+height: 400px;
+position: relative;}
+.s1 {background: url(../images/img1.jpg) no-repeat center/cover;}
+.s2 {background: url(../images/img2.jpg) no-repeat center/cover;}
+.s3 {background: url(../images/img3.jpg) no-repeat center/cover;}
+.welcome {position: absolute;
+top: 300px;
+background: rgba(0, 0, 0, 0.7);
+width: 100%;
+height: 100px;
+color: #0098b0;}
+.welcome h3 {font-size: 25px;
+margin-left: 30px;
+margin-top: 15px;}
+.welcome p {margin-top: 8px;
+margin-left: 32px;
+color: #49aa72;}
+
+
+/*콘텐츠*/
+#contents>div {width: 49%;
+height: 230px;
+margin-top: 10px;
+margin-bottom: 10px;}
+
+.img img {margin-left: 10px;
+border-radius: 40px;
+margin-top: 20px;}
+.txt {color: #ffffff;
+text-align: center;
+margin-top: 15px;}
+.txt p {margin-top: 5px;
+font-size: 11px;}
+.b {margin-top: 20px;
+margin-left: 67px;}
+.b button {border: none;
+background: #49aa72;
+color: #ffffff;
+font-weight: bold;
+padding: 5px 10px;
+border-radius: 5px;}
+.arrow img {width: 100px;
+margin-top: 5px;
+margin-left: 55px;}
+
+.tabmenu {width: 80px;
+height: 30px;
+background: #0098b0;
+color: #ffffff;
+text-align: center;
+border-radius: 10px 10px 0 0;
+line-height: 30px;
+margin-left: 30px;
+font-size: 14px;
+font-weight: bold;}
+.tabcon {width: 100%;
+height: 200px;
+border: 4px solid #0098b0;
+border-radius: 10px;
+font-size: 14px;
+overflow: hidden;
+background: #ffffff;}
+
+.notice table {width: 100%;
+height: 193px;}
+.notice table th {text-align: left;
+padding: 10px 30px;}
+.notice table tr:hover, .notice table a:focus {background: #d12200;
+color: #ffffff;}
+
+.gallery ul {display: flex;
+justify-content: space-around;
+margin-top: 25px;
+font-weight: bold;
+color: #d12200;
+text-align: center;}
+.gallery img {width: 250px;
+border-radius: 30px;
+margin-bottom: 5px;}
+.gallery li:hover, .gallery a:focus {opacity: 0.5;}
+
+
+/*팝업*/
+.modal {position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #d1230042;
+display: none;}
+.body {width: 500px;
+height: 200px;
+background: #ffffff;
+border: 5px solid #49aa72;
+border-radius: 20px;
+margin-top: 250px;
+margin-left: 38%;}
+.body h3 {padding: 20px;
+color: #d12200;}
+.body p {padding: 5px 20px;}
+.button {float: right;
+margin-right: 20px;
+margin-top: 35px;}
+.button button {padding: 10px 15px;
+border: none;
+background: #49aa72;
+color: #ffffff;
+font-weight: bold;
+border-radius: 10px;}
+
+
+
+
+/*푸터*/
+.foot1 {width: 200px;
+height: 100px;}
+.foot1 img {width: 120px;
+margin-left: 35px;
+filter: grayscale(1);}
+
+.foot2 {width: calc(100% - 400px);
+height: 100px;
+line-height: 100px;
+font-size: 13px;
+text-align: center;
+color: #ffffff;}
+
+.foot3 {width: 200px;
+height: 100px;}
+.foot3 form {margin-top: 40px;
+margin-left: 55px;}
+
+
