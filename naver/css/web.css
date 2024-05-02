@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+
+/*네이버 초록 : #00d463*/
+
+
+/*전체*/
+* {padding: 0;
+margin: 0;
+font-family: "NanumSquareR";
+box-sizing: border-box;}
+body {background: #ffffff;
+color: #333333;
+width: 100%;
+height: 100%;}
+li {list-style: none;}
+a {text-decoration: none;
+color: inherit;
+display: block;}
+table {border-collapse: collapse;}
+button {cursor: pointer;}
+img {max-width: 100%;
+vertical-align: top;}
+    
+/*레이아웃*/
+#container {width: 1300px;
+margin: 0 auto;}
+header {width: 100%;
+height: 70px;
+display: flex;
+justify-content: space-between;}
+nav {width: 100%;
+height: 140px;}
+#like {width: 100%;
+height: 400px;}
+#new {width: 100%;
+height: 420px;}
+#algo {width: 100%;
+height: 420px;}
+#down {width: 100%;
+height: 420px;}
+footer {width: 100%;
+height: 250px;}
+
+
+/*헤더*/
+.logo img {margin-left: 5px;}
+.link ul {display: flex;
+margin-top: 38px;
+margin-left: 20px;}
+.link li {width: 80px;
+text-align: center;}
+.link li:first-child {border-right: 2px solid #00d463;}
+.wrap {display: flex;}
+
+.first {display: flex;
+justify-content: space-between;
+margin-top: 10px;}
+.mainmenu {display: flex;
+font-size: 19px;
+text-align: center;
+border-radius: 5px;
+overflow: hidden;
+margin-top: 10px;
+font-weight: bold;}
+.mainmenu li {padding: 0 35px;
+height: 60px;
+line-height: 60px;
+border-radius: 5px;}
+.on {background: #00d463;
+color: #ffffff;}
+
+.search {margin-top: 20px;}
+.input {width: 230px;
+height: 30px;
+padding: 5px;}
+.btn {width: 50px;
+height: 30px;
+border: none;
+text-align: center;
+font-style: normal;
+border-radius: 5px;
+background: #00d463;
+color: #ffffff;
+font-weight: bold;
+font-size: 14px;}
+
+.creater button {width: 300px;
+height: 50px;
+background: #00d463;
+color: #ffffff;
+font-weight: bold;
+border: none;
+margin-top: 10px;
+border-radius: 5px;
+font-size: 20px;
+text-shadow: 2px 2px #333333;}
+
+.submenu {display: flex;
+font-size: 17px;
+margin-top: 10px;}
+.submenu li {padding: 0 27px;
+height: 50px;
+line-height: 50px;
+text-align: center;}
+.on_me {border-bottom: 3px solid #00d463;
+color: #00d463;
+font-weight: bold;}
+.nn {font-size: 15px;}
+
+
+/*관심웹툰*/
+#like li {width: 230px;
+height: 320px;
+border-radius: 5px;
+overflow: hidden;
+background: #ffffff;}
+#like ul {display: flex;
+justify-content: space-around;
+margin-top: 15px;}
+#like {padding: 15px 30px;
+position: relative;}
+.tt {font-weight: bold;
+font-size: 15px;}
+#like li img {margin-bottom: 3px;}
+#like li span {padding: 0 5px;}
+.ww {font-size: 14px;}
+#like li:hover {border: 2px solid #00d463;}
+#like a:hover {color: #00d463;}
+.hight {position: absolute;
+top: 32px;
+left: 235px;
+z-index: 22;}
+.subt {display: flex;
+justify-content: space-between;}
+.subt span {font-size: 15px;}
+.subt span:hover {font-weight: bold;}
+
+
+/*지금뜨는*/
+#new {padding: 23px 0;
+border-top: 1px solid #b8b8b8;}
+#new h3 {margin-left: 30px;}
+#imgslide {width: 100%;
+height: 350px;
+margin-top: 22px;
+overflow: hidden;
+position: relative;}
+#imgslide ul {width: 300%;
+height: 350px;
+display: flex;
+position: absolute;}
+#imgslide ul li {width: 100%;
+height: 350px;}
+.s1 {background: url(../images/slide1.jpg) no-repeat center/cover;}
+.s2 {background: url(../images/slide2.jpg) no-repeat center/cover;}
+.s3 {background: url(../images/slide3.jpg) no-repeat center/cover;}
+
+
+/*알고리즘*/
+#algo li {width: 230px;
+height: 320px;
+border-radius: 5px;
+overflow: hidden;
+background: #ffffff;}
+#algo ul {display: flex;
+justify-content: space-around;
+margin-top: 20px;}
+#algo {padding: 30px 30px;
+border-top: 1px solid #b8b8b8;}
+.tt {font-weight: bold;
+font-size: 15px;}
+#algo li img {margin-bottom: 3px;}
+#algo li span {padding: 0 5px;}
+.ww {font-size: 14px;}
+#algo li:hover {border: 2px solid #00d463;}
+#algo a:hover {color: #00d463;}
+
+
+/*하단배너*/
+#down {display: flex;
+justify-content: space-around;}
+#down>div {width: 600px;
+height: 340px;
+margin-top: 35px;}
+.d1 h4 {font-size: 18px;
+padding: 5px 0;
+border-bottom: 2px solid #b8b8b8;}
+.d1 table {
+width: 55%;
+height: 205px;
+margin-top: 5px;
+font-size: 15px;}
+.d1 table tr {text-align: left;}
+.d1 table td, th {padding: 0 15px;}
+.d1 table a:hover {border-bottom: 1px solid #333333;}
+.bb h5 {font-size: 16px;
+margin-top: 25px;}
+.bb img {width: 130px;
+float: left;}
+.bb {display: flex;
+justify-content: space-around;
+border-top: 2px dotted #b8b8b8;}
+.bb p {margin-top: 3px;}
+.bb span {color: #00d463;}
+
+.d2 li {width:600px;
+height: 120px;
+background: lavender;
+border: 1px solid #b8b8b8;
+border-radius: 5px;
+overflow: hidden;
+border-bottom: none;}
+.d2 li:last-child {border-bottom: 1px solid #b8b8b8;}
+
+
+
+/*푸터*/
+footer {font-size: 13px;
+padding: 80px 0;
+color: #7e7e7e;}
+.ect ul {display: flex;
+margin-top: 4px;}
+.ect li {
+text-align: left;
+padding: 3px 10px;
+border-right: 1px solid #b8b8b8;}
+footer p {padding: 15px 10px;
+font-weight: bold;}
+.ect li:last-child{border-right: none;}
+
+/*리모컨*/
+#remote {width: 70px;
+height: 150px;
+background: #ffffff;
+position: fixed;
+top: 78%;
+left: 1630px;
+border-radius: 90px;
+box-shadow: 2px 2px 2px 2px #b8b8b8;
+overflow: hidden;}
+#remote img{width: 50px;}
+#remote li {
+height: 75px;
+text-align: center;
+padding: 14px 0;}
+
+
+
+
+
